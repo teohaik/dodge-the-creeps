@@ -17,10 +17,10 @@ shortcut = SubResource( 2 )
 script = ExtResource( 2 )
 
 [node name="ScoreLabel" type="Label" parent="."]
-margin_left = 199.709
-margin_top = 13.773
-margin_right = 289.709
-margin_bottom = 91.773
+margin_left = 583.235
+margin_top = 23.3082
+margin_right = 673.235
+margin_bottom = 101.308
 custom_fonts/font = SubResource( 1 )
 text = "0"
 align = 1
@@ -29,12 +29,12 @@ __meta__ = {
 }
 
 [node name="Message" type="Label" parent="."]
-margin_left = 83.6002
-margin_top = 308.517
-margin_right = 407.6
-margin_bottom = 467.517
+margin_left = 446.996
+margin_top = 301.631
+margin_right = 812.996
+margin_bottom = 460.631
 custom_fonts/font = SubResource( 1 )
-text = "Doge the 
+text = "Dodge the 
 Creeps!"
 align = 1
 __meta__ = {
@@ -42,10 +42,10 @@ __meta__ = {
 }
 
 [node name="StartButton" type="Button" parent="."]
-margin_left = 163.157
-margin_top = 613.959
-margin_right = 343.157
-margin_bottom = 697.959
+margin_left = 547.213
+margin_top = 607.072
+margin_right = 727.213
+margin_bottom = 691.072
 custom_fonts/font = SubResource( 1 )
 shortcut = SubResource( 3 )
 text = "Start"

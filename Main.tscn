@@ -10,7 +10,7 @@
 
 [sub_resource type="Curve2D" id=1]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 0.0327759, 2.08255, 0, 0, 0, 0, 481.118, 1.19165, 0, 0, 0, 0, 480.227, 718.811, 0, 0, 0, 0, 1.81458, 719.256, 0, 0, 0, 0, 1.36914, 2.08255, 0, 0, 0, 0, 0.0327759, 2.08255 )
+"points": PoolVector2Array( 0, 0, 0, 0, -45.7437, -16.9887, 0, 0, 0, 0, -48.6209, -14.1826, 0, 0, 0, 0, -47.4221, -1.83548, 0, 0, 0, 0, 464.971, -0.713013, 0, 0, 0, 0, 463.293, 706.438, 0, 0, 0, 0, -45.7437, 709.805, 0, 0, 0, 0, -47.4221, -8.57025, 0, 0, 0, 0, -45.7437, -16.9887 )
 }
 
 [node name="Main" type="Node"]
@@ -18,10 +18,10 @@ script = ExtResource( 2 )
 Mob = ExtResource( 3 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = 476.0
-margin_top = 6.0
-margin_right = 1193.0
-margin_bottom = 482.0
+margin_left = 1205.0
+margin_top = -1.5
+margin_right = 1922.0
+margin_bottom = 1195.5
 rect_rotation = 90.0
 texture = ExtResource( 5 )
 expand = true
@@ -31,7 +31,6 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-visible = false
 
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 0.5
@@ -43,9 +42,12 @@ wait_time = 2.0
 one_shot = true
 
 [node name="StartPosition" type="Position2D" parent="."]
-position = Vector2( 240, 450 )
+visible = false
+position = Vector2( 647.5, 282.5 )
 
 [node name="MobPath" type="Path2D" parent="."]
+position = Vector2( 114.209, 12.2246 )
+scale = Vector2( 2.34068, 1 )
 curve = SubResource( 1 )
 
 [node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
